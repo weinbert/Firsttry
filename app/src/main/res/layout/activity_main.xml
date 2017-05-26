@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity=""
+    tools:context="com.example.weini.firsttry.MainActivity">
+
+
+    <GridLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="3"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/KFZ"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/kfz" />
+
+
+        <ImageButton
+            android:id="@+id/Haushalt"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/haushalt" />
+
+        <ImageButton
+            android:id="@+id/Miete"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/miete" />
+
+        <ImageButton
+            android:id="@+id/Strom"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/strom" />
+
+        <ImageButton
+            android:id="@+id/Essen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/essen" />
+
+
+        <ImageButton
+            android:id="@+id/Trinken"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/trinken" />
+
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:layout_row="2"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/plus" />
+
+        <ImageButton
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="0"
+            android:layout_margin="10dp"
+            android:layout_row="4"
+            android:gravity="bottom"
+            android:scaleType="fitCenter"
+
+            app:srcCompat="@mipmap/home" />
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_column="2"
+            android:layout_margin="10dp"
+            android:layout_row="4"
+            android:gravity="bottom"
+            android:scaleType="fitCenter"
+            app:srcCompat="@mipmap/dash" />
+
+    </GridLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation" />
+
+
+</LinearLayout>
